@@ -32,12 +32,12 @@ uart:
 external_components:
   - source:
       type: git
-      url: https://github.com/pico1881/Esphome-Innova-Climate
+      url: https://github.com/pico1881/Esphome-Innova-Climate-Wall-Panel
       ref: main
-    components: [ innova_climate ]
+    components: [ innova_climate_wall ]
 
 climate:
-  - platform: innova_climate
+  - platform: innova_climate_wall
     name: ${name}
     address: ${modbus_address}
     update_interval: 30s
@@ -45,21 +45,9 @@ climate:
     #optional Air temperature sensor
     air_temperature:
       name: ${name} air temp
-    #optional Water temperature sensor
-    water_temperature:
-      name: ${name} water temp   
-    #optional Fan Speed sensor
-    fan_speed:
-      name: ${name} fan speed
     #optional Temperature setpoint sensor    
     setpoint:
       name: ${name} setpoint   
-    #optional binary sensor for output status of boiler relay 
-    boiler_relay:
-      name: ${name} boiler relay
-    #optional binary sensor for output status of chiller relay 
-    chiller_relay:    
-      name: ${name} chiller relay
     #optional switch for lock the on-board device keyboard 
     key_lock_switch:
       name: ${name} key lock
