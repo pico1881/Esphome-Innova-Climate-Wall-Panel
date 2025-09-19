@@ -29,7 +29,7 @@ a DC-DC step down regulator like this with the output voltage regulated at 5V fr
 ![voltage_regulator](/images/voltage_regulator.jpg)
 
 Connect all as this schematic, don't forget to apply jumper at RTU pin on the Innova board:
-![connection_schema](/images/connection_schema.jpg)
+![connection_schema](/images/connection_schema_2.jpg)
 
 ### Software
 
