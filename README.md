@@ -62,7 +62,7 @@ climate:
     #optional Air temperature sensor
     air_temperature:
       name: ${name} air temp
-    #optional Water temperature sensor
+    #optional Setpoint sensor
     setpoint:
       name: ${name} setpoint   
     #optional binary sensor for output status of boiler relay 
