@@ -11,13 +11,6 @@ This component supports the following functionality:
 
 Optional you can set sensors:
 - Current temperature
-- Target temperature
-- Water temperature
-- Fan speed sensor
-  
-binary sensors:
-- Output boiler relay status
-- Output chiller relay status
 
 and a switch:
 - Keyboard lock switch for lock the on-board keyboard (same function when you push + and - key on the device)
