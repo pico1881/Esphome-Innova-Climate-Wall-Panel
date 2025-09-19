@@ -1,4 +1,4 @@
-# Esphome-Innova-Climate
+# Esphome-Innova-Climate-Wall-Panel
 The ``innova_climate`` climate platform creates a climate device which can be used
 to control a Innova fancoil via modbus communication. 
 
