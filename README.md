@@ -32,7 +32,7 @@ Connect all as this schematic:
 ### Software
 
 To use this component in your ESPHome configuration, follow the example below.
-NOTE: verify the modbus address of fancoil board, default is 1, to the manual for address settings.
+NOTE: verify the modbus address of fancoil board, default is 1, refer to the device instruction manual for address settings.
 
 #### Example configuration
 
