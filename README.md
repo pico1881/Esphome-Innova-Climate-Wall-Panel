@@ -11,14 +11,12 @@ This component supports the following functionality:
 
 Optional you can set sensors:
 - Current temperature
+- Target temperature
 
 and a switch:
 - Keyboard lock switch for lock the on-board keyboard (same function when you push + and - key on the device)
 
 Hardware setup
---------------
-Tested with Innova INN-FR-B32 board, can work with same board installed on other brand fancoil, for more details read the PDF file.
---------------
 
 You need an RS485 transceiver module:
 
@@ -28,13 +26,13 @@ a DC-DC step down regulator like this with the output voltage regulated at 5V fr
 
 ![voltage_regulator](/images/voltage_regulator.jpg)
 
-Connect all as this schematic, don't forget to apply jumper at RTU pin on the Innova board:
+Connect all as this schematic:
 ![connection_schema](/images/connection_schema_2.jpg)
 
 ### Software
 
 To use this component in your ESPHome configuration, follow the example below.
-NOTE: verify the modbus address of fancoil board, default is 1, refer to the attached manual for advanced settings.
+NOTE: verify the modbus address of fancoil board, default is 1, to the manual for address settings.
 
 #### Example configuration
 
