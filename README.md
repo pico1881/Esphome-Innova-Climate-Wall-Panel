@@ -42,9 +42,9 @@ NOTE: verify the modbus address of fancoil board, default is 1, refer to the att
 external_components:
   - source:
       type: git
-      url: https://github.com/pico1881/Esphome-Innova-Climate
+      url: https://github.com/pico1881/Esphome-Innova-Climate-Wall-Panel
       ref: main
-    components: [ innova_climate ]
+    components: [ innova_climate_wall ]
 
 logger:
   baud_rate: 0  #disable serial logger when use serial hardware pins
@@ -56,7 +56,7 @@ uart:
   stop_bits: 1
 
 climate:
-  - platform: innova_climate
+  - platform: innova_climate_wall
     name: Innova         #Required field, set your desired name for the climate
     address: 1           #Set modbus address of Innova board default 1
     update_interval: 60s #The interval that the sensors should be checked. Defaults to 60 seconds.
@@ -65,21 +65,9 @@ climate:
     air_temperature:
       name: ${name} air temp
     #optional Water temperature sensor
-    water_temperature:
-      name: ${name} water temp   
-    #optional Fan Speed sensor
-    fan_speed:
-      name: ${name} fan speed
-    #optional Temperature setpoint sensor    
     setpoint:
       name: ${name} setpoint   
     #optional binary sensor for output status of boiler relay 
-    boiler_relay:
-      name: ${name} boiler relay
-    #optional binary sensor for output status of chiller relay 
-    chiller_relay:    
-      name: ${name} chiller relay
-    #optional switch for lock the on-board device keyboard 
     key_lock_switch:
       name: ${name} key lock
 ```
